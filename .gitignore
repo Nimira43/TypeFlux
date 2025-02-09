@@ -39,3 +39,4 @@ coverage/
 *.swp
 *.lock
 .cache
+.parcel-cache

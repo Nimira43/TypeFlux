@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 interface UserProps {
   id?: number
   name?: string
@@ -27,7 +29,10 @@ export class User {
     if (!handlers || handlers.length === 0) {
       return
     }
-
     handlers.forEach(callback => callback())
+  }
+
+  fetch(): void {
+    
   }
 }

@@ -12,4 +12,4 @@ user.on('save', () => {
   console.log('User Saved!')
 })
 
-user.trigger('change')
+user.trigger('save')

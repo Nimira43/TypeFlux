@@ -5,10 +5,9 @@ export class Sync {
   constructor(public rootUrl: string) {}
 
   fetch(): void {
-    axios.get(`%{this.rootUrl}/${this.get('id')}`)
-      .then((response: AxiosResponse): void => {
-        this.set(response.data)
-      })
+    axios.get(`${this.rootUrl}/${this.get('id')}`).then((response: AxiosResponse): void => {
+      this.set(response.data)
+    })
   }
   
   save(): void {

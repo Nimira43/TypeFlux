@@ -39,6 +39,12 @@ export class User {
       })
   }
 
-  save(): void {}
+  save(): void {
+    if (this.get('id')) {
+      axios.put(`http://localhost:3000/users/${this.get('id')}`)
+    } else {
+
+    }
+  }
 
 }

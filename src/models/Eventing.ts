@@ -1,3 +1,5 @@
+type Callback = () => void
+
 export class Eventing {
   on(eventName: string, callback: Callback): void {
     const handlers = this.events[eventName] || []

@@ -6,8 +6,6 @@ interface UserProps {
   age?: number
 }
 
-type Callback = () => void
-
 export class User {
   events: { [key: string]: Callback[] } = {}
 
@@ -19,8 +17,6 @@ export class User {
     Object.assign(this.data, update)
   }
   
-  
-
   fetch(): void {
     axios.get(`http://localhost:3000/users/${this.get('id')}`)
       .then((response: AxiosResponse): void => {

@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
+import {UserProps } from './User'
 
 export class Sync {
   fetch(): void {

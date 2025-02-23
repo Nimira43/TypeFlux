@@ -11,7 +11,7 @@ type Callback = () => void
 export class User {
   events: { [key: string]: Callback[] } = {}
 
-  constructor(private data: UserProps) {}
+  constructor(private data: UserProps) { }
   get(propName: string): (number | string) {
     return this.data[propName]
   }
@@ -36,6 +36,9 @@ export class User {
     axios.get(`http://localhost:3000/users/${this.get('id')}`)
       .then((response: AxiosResponse): void => {
         this.set(response.data)
-    })
+      })
   }
+
+  save(): void {}
+
 }

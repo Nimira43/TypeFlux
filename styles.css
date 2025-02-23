@@ -38,7 +38,9 @@ body {
   box-shadow:
     0 0.25rem 1.5rem rgba(255, 68, 0, 0.75),
     inset 0 0.75rem 1.5rem rgba(0, 0, 0, 0.75);
-  animation: shimmer 2s infinite ease-in-out;
+  animation: 
+    shimmer 2s infinite ease-in-out,
+    flicker 1.5s infinite;
 }
 
 @keyframes shimmer {
@@ -58,5 +60,14 @@ body {
     box-shadow:
       0 0.25rem 1.5rem rgba(255, 68, 0, 0.75),
       inset 0 0.75rem 1.5rem rgba(0, 0, 0, 0.75);
+  }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0;
   }
 }

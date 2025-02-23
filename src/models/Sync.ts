@@ -1,9 +1,14 @@
 import axios, { AxiosResponse } from 'axios'
 import {UserProps } from './User'
 
+new Sync('http://localhost:3000')
+
 export class Sync {
+  constructor(public rootUrl: string) {}
+
+
   fetch(): void {
-    axios.get(`http://localhost:3000/users/${this.get('id')}`)
+    axios.get(`%{this.routeUrl}/${this.get('id')}`)
       .then((response: AxiosResponse): void => {
         this.set(response.data)
       })

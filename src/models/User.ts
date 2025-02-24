@@ -1,4 +1,5 @@
 import { Eventing } from './Eventing'
+import { Sync } from './Sync'
  
 export interface UserProps {
   id?: number

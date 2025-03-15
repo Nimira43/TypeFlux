@@ -4,3 +4,8 @@ const user = new User({ name: 'Sylvester', age: 63 })
 
 console.log(user.get('name'))
 
+user.on('change', () => {
+  console.log('User was changed')
+})
+
+user.trigger('change')

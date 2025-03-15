@@ -8,10 +8,10 @@ class Person {
     public lastName: string
   ) { }
   
-  fullName(): string {
+  get fullName(): string {
     return `${this.firstName} ${this.lastName}`
   }
 } 
 
 const person1 = new Person('firstname', 'lastname')
-console.log(person1.fullName())
+console.log(person1.fullName)

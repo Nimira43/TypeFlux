@@ -53,7 +53,7 @@ export class User {
   }
 
   save(): void {
-    
+    this.sync.save(this.attributes.getAll())
   }
 }
 

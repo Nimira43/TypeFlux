@@ -12,3 +12,6 @@ class Person {
     return `${this.firstName} ${this.lastName}`
   }
 } 
+
+const person1 = new Person('firstname', 'lastname')
+console.log(person1.fullName())

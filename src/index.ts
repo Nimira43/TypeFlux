@@ -6,5 +6,9 @@ class Person {
   constructor(
     public firstName: string,
     public lastName: string
-  ) {}
+  ) { }
+  
+  fullName(): string {
+    return `${this.firstName} ${this.lastName}`
+  }
 } 

@@ -47,8 +47,13 @@ export class User {
 
     this.sync.fetch(id).then(
       (response: AxiosResponse): void => {
-      this.set(response.data)
-    })
+        this.set(response.data)
+      }
+    )
+  }
+
+  save(): void {
+    
   }
 }
 

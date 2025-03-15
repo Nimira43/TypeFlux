@@ -19,8 +19,8 @@ export class User {
     this.attributes = new Attributes<UserProps>(attrs)
   }
 
-  on(eventName: string, callback: Callback): void {
-    this.events.on(eventName, callback)
+  get on() {
+    return this.events.on
   }
 
 }

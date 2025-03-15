@@ -31,6 +31,10 @@ export class User {
     return this.attributes.get
   }
 
+  set(update: UserProps): void {
+    
+  }
+
 }
 
 

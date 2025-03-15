@@ -36,6 +36,13 @@ export class User {
     this.events.trigger('change')
   }
 
+  fetch(): void {
+    const id = this.attributes.get('id')
+
+    if (typeof id !== 'number') {
+      throw new Error('Cannot fetch without an id')
+    }
+  }
 }
 
 

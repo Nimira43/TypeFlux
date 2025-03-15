@@ -18,6 +18,11 @@ export class User {
   constructor(attrs: UserProps) {
     this.attributes = new Attributes<UserProps>(attrs)
   }
+
+  on(eventName: string, callback: Callback): void {
+    this.events.on(eventName, callback)
+  }
+
 }
 
 

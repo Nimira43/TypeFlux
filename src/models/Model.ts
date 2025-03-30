@@ -1,4 +1,4 @@
-import { AxiosPromise } from 'axios'
+import { AxiosPromise, AxiosResponse } from 'axios'
 
 interface ModelAttributes<T> {
   set(value: T): void
@@ -16,7 +16,11 @@ interface Events {
   trigger(eventName: string): void
 }
 
-export class Model<T> {
+interface HasId {
+  id?: number
+}
+
+export class Model<T extends HasId> {
   constructor(
     private attributes: ModelAttributes<T>,
     private events: Events,
@@ -35,7 +39,7 @@ export class Model<T> {
     return this.attributes.get
   }
 
-  set(update: UserProps): void {
+  set(update: T): void {
     this.attributes.set(update)
     this.events.trigger('change')
   }

@@ -1,5 +1,6 @@
 interface ModelAttributes<T> {
   set(value: T): void
+  getAll(): T
 }
 
 interface Sync {

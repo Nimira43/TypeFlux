@@ -1,11 +1,13 @@
+import { AxiosPromise } from 'axios'
+
 interface ModelAttributes<T> {
   set(value: T): void
   getAll(): T
   get<K extends keyof T>(key: K): T[K]
 }
 
-interface Sync {
-
+interface Sync<T> {
+  fetch(id: number): AxiosPromise
 }
 
 interface Events {

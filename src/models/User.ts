@@ -1,3 +1,5 @@
+import { Model } from './Model'
+
 export interface UserProps {
   id?: number
   name?: string
@@ -6,8 +8,8 @@ export interface UserProps {
 
 const rootUrl = 'http://localhost:3000/users'
 
-export class User {
-
+export class User extends Model<UserProps> {
+  
 }
 
 

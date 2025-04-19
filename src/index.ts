@@ -6,12 +6,13 @@ import { UserForm } from './views/UserForm'
 import { User } from './models/User'
 
 const user = User.buildUser({
-  name: 'Colin',
-  age: 35
+  name: 'Liam',
+  age: 53
 })
 
 const userForm = new UserForm(
-  document.getElementById('root')
+  document.getElementById('root'),
+  user
 )
 
 userForm.render()

@@ -2,14 +2,6 @@
 
 // npm run start:db
 
-import { User } from './models/User'
+import { UserForm } from './views/UserForm'
 
-const collection = User.buildUserCollection()
-
-
-collection.on('change', () => {
-  console.log(collection)
-})
-
-
-collection.fetch()
+const userForm = new UserForm()

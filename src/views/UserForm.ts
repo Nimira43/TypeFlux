@@ -23,7 +23,11 @@ export class UserForm {
   }
 
   bindEvents(fragment: DocumentFragment): void {
-    
+    const eventsMap = this.eventsMap()
+
+    for (let eventKey in eventsMap) {
+      const [eventName, selector] = eventKey.split(':')
+    }
   }
 
   render(): void {

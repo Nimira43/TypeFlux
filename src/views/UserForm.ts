@@ -1,5 +1,6 @@
 export class UserForm {
   parent: Element
+
   template(): string {
     return `
       <div>
@@ -9,4 +10,8 @@ export class UserForm {
     
     `
   }
+  render(): void {
+    const templateElement = document.createElement('template')
+  }
+
 }

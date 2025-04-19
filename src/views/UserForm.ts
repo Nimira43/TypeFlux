@@ -1,5 +1,9 @@
 export class UserForm {
-  constructor(public parent: Element) {}
+  constructor(public parent: Element) { }
+  
+  onButtonClick(): void {
+  console.log('Button Clicked')
+  }
 
   template(): string {
     return `
@@ -7,6 +11,7 @@ export class UserForm {
         <h1 class='logo'>TypeFlux</h1>
         <h1>User Form</h1>
         <input />
+        <button>Submit</button>
       </div>  
     `
   }

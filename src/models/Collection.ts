@@ -20,7 +20,10 @@ export class Collection {
   fetch(): void {
     axios.get(this.rootUrl)
       .then((response: AxiosResponse) => {
-      response.data
+        response.data.forEach((value: UserProps) => {
+          const user = User.buildUser(value)
+          this.models.unshift(user)
+      })
     })
   }
 }

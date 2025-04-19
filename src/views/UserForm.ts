@@ -24,8 +24,11 @@ export class UserForm {
   template(): string {
     return `
       <div>
-        <h1 class='logo'>TypeFlux</h1>
+        <h4 class='logo'>TypeFlux</h4>
+        <hr />
         <h1>User Form</h1>
+        <div>User Name: ${this.model.get('name')}</div>
+        <div>User Age: ${this.model.get('age')}</div>
         <input />
         <button>Submit</button>
       </div>  

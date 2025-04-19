@@ -21,6 +21,11 @@ export class UserForm {
       </div>  
     `
   }
+
+  bindEvents(fragment: DocumentFragment): void {
+    
+  }
+
   render(): void {
     const templateElement = document.createElement('template')
     templateElement.innerHTML = this.template()

@@ -8,7 +8,6 @@ export class UserForm {
         <h1>User Form</h1>
         <input />
       </div>  
-    
     `
   }
   render(): void {

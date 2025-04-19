@@ -1,4 +1,5 @@
-import { User } from './User'
+import axios from 'axios'
+import { User, UserProps } from './User'
 import { Eventing } from './Eventing'
 
 export class Collection {

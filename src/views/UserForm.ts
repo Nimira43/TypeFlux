@@ -4,6 +4,7 @@ export class UserForm {
   template(): string {
     return `
       <div>
+        <h1 class='logo'>TypeFlux</h1>
         <h1>User Form</h1>
         <input />
       </div>  

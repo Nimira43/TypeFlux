@@ -8,6 +8,9 @@ export abstract class View {
     this.bindModel()
   }
 
+  abstract eventsMap(): { [key: string]: () => void }
+  abstract template(): string
+
   bindModel(): void {
     this.model.on('change', () => {
       this.render()

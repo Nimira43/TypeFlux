@@ -22,7 +22,7 @@ export class UserForm {
   }
 
   onSetNameClick = (): void => {
-    
+    const input = this.parent.querySelector('input')
   }
   
   onSetAgeClick = (): void => {

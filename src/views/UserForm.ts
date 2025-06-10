@@ -1,3 +1,4 @@
+import { User, UserProps } from '../models/User'
 import { View } from './View'
 
 export class UserForm extends View {

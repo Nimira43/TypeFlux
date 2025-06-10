@@ -10,9 +10,6 @@ const user = User.buildUser({
   age: 53
 })
 
-const userForm = new UserForm(
-  document.getElementById('root'),
-  user
-)
+const userForm = new UserForm(document.getElementById('root'), user)
 
 userForm.render()

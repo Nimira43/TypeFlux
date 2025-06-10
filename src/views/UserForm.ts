@@ -26,7 +26,7 @@ export class UserForm {
  
   template(): string {
     return `
-      <div>
+      <div class="container">
         <h4 class='logo'>TypeFlux</h4>
         <hr />
         <h1>User Form</h1>

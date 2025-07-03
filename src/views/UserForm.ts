@@ -5,9 +5,13 @@ export class UserForm extends View<User, UserProps> {
   eventsMap(): { [key: string]: () => void} {
     return {
       'click:.set-age': this.onSetAgeClick,
-      'click:.set-name': this.onSetNameClick
+      'click:.set-name': this.onSetNameClick,
+      'click:.save-model': this.onSaveClick
+
     }
   }
+
+  onSaveClick = () => {}
 
   onSetNameClick = (): void => {
     const input = this.parent.querySelector('input')

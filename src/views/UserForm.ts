@@ -11,7 +11,9 @@ export class UserForm extends View<User, UserProps> {
     }
   }
 
-  onSaveClick = () => {}
+  onSaveClick = (): void => {
+    this.model.save()
+  }
 
   onSetNameClick = (): void => {
     const input = this.parent.querySelector('input')

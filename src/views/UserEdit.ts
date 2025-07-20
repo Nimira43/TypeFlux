@@ -5,7 +5,7 @@ export class UserEdit extends View<User, UserProps> {
   regionsMap(): { [key: string]: string } {
     return {
       userShow: '.user-show',
-      userEdit: '.user-edit'
+      userForm: '.user-form'
     }
   }
 

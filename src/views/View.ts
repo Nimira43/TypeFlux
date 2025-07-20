@@ -50,7 +50,7 @@ export abstract class View<T extends Model<K>, K extends HasId> {
     }
   }
 
-  onRender(): {
+  onRender(): void {
     
   }
 

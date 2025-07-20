@@ -12,7 +12,7 @@ export class UserEdit extends View<User, UserProps> {
   }
 
   onRender(): void {
-
+    const userShow = new UserShow(this.regions.userShow, this.model)
   }
 
   template() {

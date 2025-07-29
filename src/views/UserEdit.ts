@@ -17,6 +17,7 @@ export class UserEdit extends View<User, UserProps> {
   }
 
   template() {
+    
     return `
       <div>
         <div class='user-show'></div>
